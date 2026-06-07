@@ -41,4 +41,5 @@ Last checked: 2026-06-07
 - Console after favicon fix: 0 errors, 0 warnings.
 - 2026-06-07 refresh: location/details fields and Photo evidence checkbox updated the generated report in browser.
 - 2026-06-07 PWA/print smoke: `manifest.webmanifest` returned 200, service worker registered locally, Print report triggered `window.print`, desktop/mobile snapshots showed Copy and Print buttons, and console had 0 errors and 0 warnings.
+- 2026-06-07 live Pages PWA/print smoke: `manifest.webmanifest` and `service-worker.js` returned 200, service worker registered at `https://lalishka.github.io/fixnote/`, Print report button was visible, and console had 0 errors and 0 warnings.
 - Local screenshots were saved under `.playwright-cli/` and are ignored by Git.

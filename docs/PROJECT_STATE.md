@@ -47,6 +47,7 @@ Live demo URL: <https://lalishka.github.io/fixnote/>
 - Printable report mode implemented with a print button and print stylesheet.
 - PWA/offline install readiness implemented with a web app manifest and service worker cache for static assets.
 - 2026-06-07 local PWA/print smoke: manifest returns 200, service worker registers at localhost scope, Print report calls `window.print`, desktop/mobile snapshots show Copy and Print buttons, and console has 0 errors and 0 warnings.
+- 2026-06-07 live Pages PWA/print smoke: `manifest.webmanifest` and `service-worker.js` return 200, service worker registers at `https://lalishka.github.io/fixnote/`, Print report button is visible, page title is `FixNote`, and console has 0 errors and 0 warnings.
 - Public roadmap issues #1-#5 are open for accessibility audit, printable output, PWA/offline install review, translation readiness, and issue category review.
 
 ## Not Yet Done
