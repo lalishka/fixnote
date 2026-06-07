@@ -8,6 +8,7 @@ The project is being prepared for responsible open-source maintenance before bro
 
 - Public repository: <https://github.com/lalishka/fixnote>
 - License: MIT.
+- First release: `v0.1.0`.
 - Topics: `civic-tech`, `offline`, `accessibility`, `community-tools`, `public-good`.
 - Current scope: static offline-first browser app with no backend, accounts, tracking, paid APIs, or remote runtime dependencies.
 

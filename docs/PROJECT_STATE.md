@@ -36,12 +36,12 @@ Planned live demo URL: <https://lalishka.github.io/fixnote/>
 - CI and GitHub Pages workflow files have been added as manual-dispatch workflows.
 - GitHub-hosted Actions did not start on the first auto-trigger attempt because GitHub reported an account billing lock. Local `npm test`, `npm run check`, and Playwright browser smoke checks pass.
 - README includes a local Playwright screenshot at `assets/fixnote-demo.png`.
+- First release/tag: `v0.1.0`, based on local tests, maintainer-readiness check, and browser smoke evidence.
 
 ## Not Yet Done
 
 - GitHub Actions account lock must be resolved before CI/Pages can run on GitHub-hosted runners.
 - GitHub Pages workflow has been added, but live deployment must be confirmed after GitHub Actions can run.
-- First GitHub release/tag has not been created yet.
 - No translations are included yet.
 - No country-specific, city-specific, or government-service integrations are included.
 - No full accessibility audit beyond semantic labels, keyboard-focus styling, responsive layout, and browser smoke-check has been completed.
