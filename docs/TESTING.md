@@ -26,7 +26,7 @@ Manually verify in a browser:
 - User-entered whitespace is normalized before output.
 - Unknown evidence values are ignored instead of leaking into the generated report.
 - Maintainer-readiness check validates required docs, templates, and package script safety.
-- GitHub Actions CI runs `npm test` and `npm run check` on pushes and pull requests.
+- GitHub Actions CI workflow exists and runs `npm test` plus `npm run check` when manually dispatched. Automatic GitHub-hosted execution is blocked until the account Actions issue is resolved.
 
 ## Current Manual Browser Evidence
 

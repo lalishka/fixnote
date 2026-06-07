@@ -25,7 +25,7 @@ FixNote now includes a small maintainer baseline:
 - security and privacy reporting policy;
 - issue and pull request templates;
 - release and testing runbooks;
-- GitHub Actions CI and Pages deployment workflows;
+- manual-dispatch GitHub Actions CI and Pages deployment workflows;
 - automated maintainer-readiness check;
 - tests for report-generation behavior and edge cases.
 
@@ -43,6 +43,6 @@ Codex and API credits would be used for practical OSS maintenance work:
 ## Honest Limitations
 
 - The project is early and does not yet have external adoption.
-- Hosted GitHub Pages deployment is being configured and must be confirmed after the workflow runs.
+- Hosted GitHub Pages deployment is prepared but blocked until GitHub-hosted Actions can run for the repository account.
 - No full accessibility audit has been completed yet.
 - No country-specific reporting integrations are included.

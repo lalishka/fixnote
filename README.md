@@ -14,7 +14,9 @@ The project is intentionally not country-specific. It has no backend, accounts, 
 
 Public repository: <https://github.com/lalishka/fixnote>
 
-Live demo: <https://lalishka.github.io/fixnote/>
+Planned live demo: <https://lalishka.github.io/fixnote/>
+
+![FixNote interface showing the report builder and generated report](assets/fixnote-demo.png)
 
 ## Why
 
@@ -39,7 +41,7 @@ npm run check
 
 The test suite validates the report generation logic with Node's built-in test runner. The maintainer-readiness check verifies the basic contributor, security, documentation, and project-script safety files expected before release.
 
-GitHub Actions runs the same checks on pushes and pull requests.
+GitHub Actions workflow files are included for CI and Pages deployment. They are currently manual-dispatch workflows until GitHub-hosted Actions are available for the repository account.
 
 ## Maintainer Workflow
 

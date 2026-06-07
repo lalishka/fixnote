@@ -31,7 +31,7 @@ The check verifies required contributor/security/docs/template files and rejects
 
 ## GitHub Pages
 
-The Pages workflow deploys the static repository root from `main`.
+The Pages workflow deploys the static repository root from `main` when manually dispatched.
 
 Expected live URL:
 
@@ -41,7 +41,18 @@ https://lalishka.github.io/fixnote/
 
 After changing Pages workflow or static app files:
 
-1. Push to `main`.
-2. Wait for the `Pages` workflow to complete.
-3. Open the live URL and verify the page is not blank.
-4. Update `docs/PROJECT_STATE.md` with the deployment result.
+1. Resolve any GitHub account/repository Actions blockers.
+2. Trigger the `Pages` workflow manually.
+3. Wait for the `Pages` workflow to complete.
+4. Open the live URL and verify the page is not blank.
+5. Update `docs/PROJECT_STATE.md` with the deployment result.
+
+## Enable Automatic CI Later
+
+The workflow files are currently manual-dispatch only because GitHub reported an account billing lock when automatic push workflows first ran.
+
+After the account blocker is resolved:
+
+1. Change `ci.yml` to run on `push` and `pull_request`.
+2. Change `pages.yml` to run on `push` to `main` if automatic Pages deploys are desired.
+3. Push the change and confirm both workflows complete successfully.

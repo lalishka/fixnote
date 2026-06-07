@@ -33,11 +33,14 @@ Planned live demo URL: <https://lalishka.github.io/fixnote/>
 - GitHub public repository has been created and pushed on branch `main`.
 - GitHub topics are configured: `civic-tech`, `offline`, `accessibility`, `community-tools`, `public-good`.
 - `npm run check` verifies maintainer entrypoints, required docs, templates, and package script safety.
-- Local workflow files for CI and GitHub Pages have been added and are ready to push.
+- CI and GitHub Pages workflow files have been added as manual-dispatch workflows.
+- GitHub-hosted Actions did not start on the first auto-trigger attempt because GitHub reported an account billing lock. Local `npm test`, `npm run check`, and Playwright browser smoke checks pass.
+- README includes a local Playwright screenshot at `assets/fixnote-demo.png`.
 
 ## Not Yet Done
 
-- GitHub Pages workflow has been added, but live deployment must be confirmed after GitHub Actions runs on `main`.
+- GitHub Actions account lock must be resolved before CI/Pages can run on GitHub-hosted runners.
+- GitHub Pages workflow has been added, but live deployment must be confirmed after GitHub Actions can run.
 - First GitHub release/tag has not been created yet.
 - No translations are included yet.
 - No country-specific, city-specific, or government-service integrations are included.
