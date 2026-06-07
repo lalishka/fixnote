@@ -11,7 +11,19 @@
 ## Prepare a GitHub Release
 
 1. Run `npm test`.
-2. Run the app locally with `npm run dev`.
-3. Verify desktop and mobile layouts in a browser.
-4. Update `docs/PROJECT_STATE.md` with verified and unverified status.
-5. Check that `README.md` still describes the current app.
+2. Run `npm run check`.
+3. Run the app locally with `npm run dev`.
+4. Verify desktop and mobile layouts in a browser.
+5. Update `docs/PROJECT_STATE.md` with verified and unverified status.
+6. Check that `README.md` still describes the current app.
+7. Check that `CONTRIBUTING.md`, `SECURITY.md`, and `.github/` templates still match the workflow.
+
+## Maintainer Readiness Check
+
+Run:
+
+```bash
+npm run check
+```
+
+The check verifies required contributor/security/docs/template files and rejects destructive commands in `package.json` scripts.

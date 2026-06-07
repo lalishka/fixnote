@@ -1,0 +1,47 @@
+# OSS Maintenance Plan
+
+FixNote is an early-stage civic-tech/public-good OSS project. It is not yet a critical or widely used dependency, and it does not yet have package download metrics or real pull request volume.
+
+The project is being prepared for responsible open-source maintenance before broader adoption.
+
+## Current Public Signals
+
+- Public repository: <https://github.com/lalishka/fixnote>
+- License: MIT.
+- Topics: `civic-tech`, `offline`, `accessibility`, `community-tools`, `public-good`.
+- Current scope: static offline-first browser app with no backend, accounts, tracking, paid APIs, or remote runtime dependencies.
+
+## Why It Matters
+
+Public-space issues often go unresolved because reports are vague, missing impact details, or hard to submit clearly. FixNote helps residents, students, tenants, volunteers, and community groups turn messy notes into structured, actionable reports.
+
+The project is intentionally country-neutral so it can be reused by municipalities, campuses, building managers, NGOs, neighborhood groups, and civic volunteers.
+
+## Maintainer Responsibilities Added Early
+
+FixNote now includes a small maintainer baseline:
+
+- contributor guidelines;
+- security and privacy reporting policy;
+- issue and pull request templates;
+- release and testing runbooks;
+- automated maintainer-readiness check;
+- tests for report-generation behavior and edge cases.
+
+## How Codex/API Credits Would Help
+
+Codex and API credits would be used for practical OSS maintenance work:
+
+- generating and reviewing test cases;
+- checking accessibility and offline-first edge cases;
+- improving documentation and release notes;
+- summarizing issues and proposed changes;
+- building small QA scripts for maintainer-readiness checks;
+- reviewing privacy and security-sensitive changes before release.
+
+## Honest Limitations
+
+- The project is early and does not yet have external adoption.
+- No hosted public deployment has been configured yet.
+- No full accessibility audit has been completed yet.
+- No country-specific reporting integrations are included.

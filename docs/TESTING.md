@@ -6,6 +6,7 @@ Run:
 
 ```bash
 npm test
+npm run check
 ```
 
 Manually verify in a browser:
@@ -22,6 +23,9 @@ Manually verify in a browser:
 - Report builder creates structured output.
 - Missing fields get visible placeholders.
 - Unknown issue types fall back to a stable label.
+- User-entered whitespace is normalized before output.
+- Unknown evidence values are ignored instead of leaking into the generated report.
+- Maintainer-readiness check validates required docs, templates, and package script safety.
 
 ## Current Manual Browser Evidence
 

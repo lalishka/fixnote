@@ -23,3 +23,9 @@ Reason: civic reporting often contains sensitive location and personal context. 
 Generated reports use direct, non-legalistic wording.
 
 Reason: the goal is to help residents send clearer reports, not to imitate a lawyer, escalate conflict, or imply guaranteed service response.
+
+## Maintainer-Readiness Baseline
+
+FixNote includes a small maintainer-readiness check and repository templates before it has a large contributor community.
+
+Reason: the project is public-good OSS, so contributors and future maintainers need clear safety boundaries early: privacy limits, country-neutral scope, no destructive scripts, and repeatable checks.

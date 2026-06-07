@@ -32,9 +32,21 @@ Then open `http://localhost:4173`.
 
 ```bash
 npm test
+npm run check
 ```
 
-The test suite validates the report generation logic with Node's built-in test runner.
+The test suite validates the report generation logic with Node's built-in test runner. The maintainer-readiness check verifies the basic contributor, security, documentation, and project-script safety files expected before release.
+
+## Maintainer Workflow
+
+FixNote now includes a small OSS-maintenance baseline:
+
+- `CONTRIBUTING.md` for contributor expectations and project boundaries;
+- `SECURITY.md` for privacy/security reporting boundaries;
+- GitHub issue and pull request templates;
+- `npm run check` for maintainer-readiness checks;
+- docs in `docs/` for state, setup, testing, runbook, decisions, next steps, and glossary.
+- `docs/OSS_MAINTENANCE.md` for the public OSS maintenance story and current limitations.
 
 ## Documentation
 

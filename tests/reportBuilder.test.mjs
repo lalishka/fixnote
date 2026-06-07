@@ -30,3 +30,31 @@ test("getIssueLabel returns a stable fallback label", () => {
   assert.equal(getIssueLabel("streetlight"), "Broken streetlight");
   assert.equal(getIssueLabel("unknown"), "Public-space issue");
 });
+
+test("buildReport normalizes whitespace in user-provided fields", () => {
+  const report = buildReport({
+    issueType: "trash",
+    location: "  Block  12\nnear the north gate ",
+    details: " bags   left\nbeside the ramp ",
+    impact: "cleanliness",
+    urgency: "standard"
+  });
+
+  assert.match(report, /Trash or illegal dumping at Block 12 near the north gate/);
+  assert.match(report, /Details: bags left beside the ramp\./);
+});
+
+test("buildReport ignores unknown evidence values", () => {
+  const report = buildReport({
+    issueType: "accessibility",
+    location: "Library entrance",
+    details: "The automatic door is not opening",
+    impact: "access",
+    urgency: "urgent",
+    evidence: ["photo", "unknown-evidence"]
+  });
+
+  assert.match(report, /Accessibility barrier at Library entrance/);
+  assert.match(report, /urgent safety concern/);
+  assert.match(report, /Evidence: photo attached\./);
+});
