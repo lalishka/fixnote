@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Offline public-space issue report helper for clearer community service requests.">
+    <title>FixNote</title>
+    <link rel="icon" href="assets/fixnote-mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="src/styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="intro" aria-labelledby="app-title">
+        <div class="brand-row">
+          <img src="assets/fixnote-mark.svg" alt="" class="brand-mark" width="52" height="52">
+          <div>
+            <p class="eyebrow">Community report helper</p>
+            <h1 id="app-title">FixNote</h1>
+          </div>
+        </div>
+        <p class="intro-copy">
+          Build a clear, copy-ready report for municipal teams, facilities staff, NGOs, or community groups. The page works offline and keeps your text in your browser only.
+        </p>
+      </section>
+
+      <section class="workspace" aria-label="Report builder">
+        <form class="panel form-panel" id="report-form">
+          <div class="field-row">
+            <label for="issue-type">Issue type</label>
+            <select id="issue-type" name="issueType">
+              <option value="streetlight">Broken streetlight</option>
+              <option value="pothole">Pothole or road damage</option>
+              <option value="trash">Trash or illegal dumping</option>
+              <option value="sidewalk">Blocked or damaged sidewalk</option>
+              <option value="crossing">Unsafe crossing</option>
+              <option value="accessibility">Accessibility barrier</option>
+              <option value="other">Other public-space issue</option>
+            </select>
+          </div>
+
+          <div class="field-row">
+            <label for="location">Location</label>
+            <input id="location" name="location" placeholder="Street, landmark, intersection, or address" autocomplete="street-address">
+          </div>
+
+          <div class="field-row">
+            <label for="details">What is happening?</label>
+            <textarea id="details" name="details" rows="5" placeholder="Describe the problem in plain language"></textarea>
+          </div>
+
+          <div class="field-grid">
+            <div class="field-row">
+              <label for="impact">Impact</label>
+              <select id="impact" name="impact">
+                <option value="safety">Safety risk</option>
+                <option value="access">Blocks access</option>
+                <option value="cleanliness">Cleanliness or health concern</option>
+                <option value="mobility">Slows traffic or walking</option>
+                <option value="quality">Quality of life issue</option>
+              </select>
+            </div>
+
+            <div class="field-row">
+              <label for="urgency">Urgency</label>
+              <select id="urgency" name="urgency">
+                <option value="standard">Standard</option>
+                <option value="soon">Needs attention soon</option>
+                <option value="urgent">Urgent safety concern</option>
+              </select>
+            </div>
+          </div>
+
+          <fieldset class="evidence-group">
+            <legend>Evidence available</legend>
+            <label><input type="checkbox" name="evidence" value="photo"> Photo</label>
+            <label><input type="checkbox" name="evidence" value="time"> Time observed</label>
+            <label><input type="checkbox" name="evidence" value="repeat"> Repeated issue</label>
+            <label><input type="checkbox" name="evidence" value="nearby"> Nearby landmark</label>
+          </fieldset>
+
+          <button type="button" id="copy-button" class="copy-button">Copy report</button>
+          <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <section class="panel output-panel" aria-labelledby="output-title">
+          <div class="output-header">
+            <h2 id="output-title">Generated report</h2>
+            <span class="privacy-note">Local only</span>
+          </div>
+          <pre id="report-output" class="report-output"></pre>
+        </section>
+      </section>
+    </main>
+
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>
