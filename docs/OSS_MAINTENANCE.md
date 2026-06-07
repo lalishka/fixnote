@@ -37,10 +37,13 @@ FixNote now includes a small maintainer baseline:
 The public roadmap is tracked in GitHub issues:
 
 - #1 Accessibility audit checklist and screen reader smoke pass
-- #2 Printable report output mode
-- #3 PWA/offline install readiness review
 - #4 Translation readiness without country-specific assumptions
 - #5 Review public-space issue categories
+
+Closed roadmap work:
+
+- #2 Printable report output mode
+- #3 PWA/offline install readiness review
 
 ## How Codex/API Credits Would Help
 

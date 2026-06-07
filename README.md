@@ -74,8 +74,6 @@ Start with [docs/README.md](docs/README.md).
 Current open roadmap issues:
 
 - [#1 Accessibility audit checklist and screen reader smoke pass](https://github.com/lalishka/fixnote/issues/1)
-- [#2 Printable report output mode](https://github.com/lalishka/fixnote/issues/2)
-- [#3 PWA/offline install readiness review](https://github.com/lalishka/fixnote/issues/3)
 - [#4 Translation readiness without country-specific assumptions](https://github.com/lalishka/fixnote/issues/4)
 - [#5 Review public-space issue categories](https://github.com/lalishka/fixnote/issues/5)
 
