@@ -14,6 +14,8 @@ The project is intentionally not country-specific. It has no backend, accounts, 
 
 Public repository: <https://github.com/lalishka/fixnote>
 
+Live demo: <https://lalishka.github.io/fixnote/>
+
 ## Why
 
 Many public-space reports fail because the message is vague, missing location details, or does not explain the impact. FixNote helps residents, students, tenants, volunteers, and community organizers send cleaner reports without needing to know official wording for any specific country.
@@ -37,6 +39,8 @@ npm run check
 
 The test suite validates the report generation logic with Node's built-in test runner. The maintainer-readiness check verifies the basic contributor, security, documentation, and project-script safety files expected before release.
 
+GitHub Actions runs the same checks on pushes and pull requests.
+
 ## Maintainer Workflow
 
 FixNote now includes a small OSS-maintenance baseline:
@@ -44,6 +48,7 @@ FixNote now includes a small OSS-maintenance baseline:
 - `CONTRIBUTING.md` for contributor expectations and project boundaries;
 - `SECURITY.md` for privacy/security reporting boundaries;
 - GitHub issue and pull request templates;
+- GitHub Actions CI and Pages deployment workflow;
 - `npm run check` for maintainer-readiness checks;
 - docs in `docs/` for state, setup, testing, runbook, decisions, next steps, and glossary.
 - `docs/OSS_MAINTENANCE.md` for the public OSS maintenance story and current limitations.

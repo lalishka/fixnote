@@ -26,6 +26,7 @@ Manually verify in a browser:
 - User-entered whitespace is normalized before output.
 - Unknown evidence values are ignored instead of leaking into the generated report.
 - Maintainer-readiness check validates required docs, templates, and package script safety.
+- GitHub Actions CI runs `npm test` and `npm run check` on pushes and pull requests.
 
 ## Current Manual Browser Evidence
 
@@ -36,4 +37,5 @@ Last checked: 2026-06-07
 - Desktop viewport: `1365x900`.
 - Mobile viewport: `390x844`.
 - Console after favicon fix: 0 errors, 0 warnings.
-- Local screenshots were saved under `output/playwright/` and are ignored by Git.
+- 2026-06-07 refresh: location/details fields and Photo evidence checkbox updated the generated report in browser.
+- Local screenshots were saved under `.playwright-cli/` and are ignored by Git.

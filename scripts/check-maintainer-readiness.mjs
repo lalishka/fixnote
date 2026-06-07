@@ -12,7 +12,9 @@ const requiredFiles = [
   "docs/RUNBOOK.md",
   ".github/pull_request_template.md",
   ".github/ISSUE_TEMPLATE/bug_report.md",
-  ".github/ISSUE_TEMPLATE/feature_request.md"
+  ".github/ISSUE_TEMPLATE/feature_request.md",
+  ".github/workflows/ci.yml",
+  ".github/workflows/pages.yml"
 ];
 
 const requiredPackageScripts = ["test", "check"];
