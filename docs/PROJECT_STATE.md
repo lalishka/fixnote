@@ -22,11 +22,12 @@ Public repository: <https://github.com/lalishka/fixnote>
 - Desktop viewport `1365x900` was visually checked: form, generated report, labels, and copy button are visible with no obvious overlap.
 - Mobile viewport `390x844` was visually checked at top and scrolled positions: form controls, copy button, and generated report are readable with no obvious overlap.
 - Form input updates the generated report, and evidence checkbox state appears in the output.
-- GitHub public repository has been created; initial push is expected on branch `main`.
+- GitHub public repository has been created and pushed on branch `main`.
+- GitHub topics are configured: `civic-tech`, `offline`, `accessibility`, `community-tools`, `public-good`.
 
 ## Not Yet Done
 
-- GitHub repository topics and hosted Pages deployment have not been configured.
+- Hosted Pages deployment has not been configured.
 - No translations are included yet.
 - No country-specific, city-specific, or government-service integrations are included.
 - No full accessibility audit beyond semantic labels, keyboard-focus styling, responsive layout, and browser smoke-check has been completed.
