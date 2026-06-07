@@ -14,7 +14,7 @@ The project is intentionally not country-specific. It has no backend, accounts, 
 
 Public repository: <https://github.com/lalishka/fixnote>
 
-Planned live demo: <https://lalishka.github.io/fixnote/>
+Live demo: <https://lalishka.github.io/fixnote/>
 
 ![FixNote interface showing the report builder and generated report](assets/fixnote-demo.png)
 

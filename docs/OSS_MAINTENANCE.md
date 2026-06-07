@@ -7,6 +7,7 @@ The project is being prepared for responsible open-source maintenance before bro
 ## Current Public Signals
 
 - Public repository: <https://github.com/lalishka/fixnote>
+- Live demo: <https://lalishka.github.io/fixnote/>
 - License: MIT.
 - First release: `v0.1.0`.
 - Topics: `civic-tech`, `offline`, `accessibility`, `community-tools`, `public-good`.
@@ -44,6 +45,6 @@ Codex and API credits would be used for practical OSS maintenance work:
 ## Honest Limitations
 
 - The project is early and does not yet have external adoption.
-- Hosted GitHub Pages deployment is prepared but blocked until GitHub-hosted Actions can run for the repository account.
+- GitHub Actions CI is prepared but blocked until GitHub-hosted Actions can run for the repository account.
 - No full accessibility audit has been completed yet.
 - No country-specific reporting integrations are included.

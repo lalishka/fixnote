@@ -6,7 +6,7 @@ FixNote is a new static, offline-first public-space report helper for internatio
 
 Public repository: <https://github.com/lalishka/fixnote>
 
-Planned live demo URL: <https://lalishka.github.io/fixnote/>
+Live demo URL: <https://lalishka.github.io/fixnote/>
 
 ## Current Scope
 
@@ -37,11 +37,12 @@ Planned live demo URL: <https://lalishka.github.io/fixnote/>
 - GitHub-hosted Actions did not start on the first auto-trigger attempt because GitHub reported an account billing lock. Local `npm test`, `npm run check`, and Playwright browser smoke checks pass.
 - README includes a local Playwright screenshot at `assets/fixnote-demo.png`.
 - First release/tag: `v0.1.0`, based on local tests, maintainer-readiness check, and browser smoke evidence.
+- GitHub Pages legacy branch deployment is enabled from `main` root and built successfully.
+- Live GitHub Pages smoke check passed at `https://lalishka.github.io/fixnote/`: page returns 200, CSS/JS/assets return 200, page title is `FixNote`, snapshot shows the form and generated report, and console has 0 errors and 0 warnings.
 
 ## Not Yet Done
 
-- GitHub Actions account lock must be resolved before CI/Pages can run on GitHub-hosted runners.
-- GitHub Pages workflow has been added, but live deployment must be confirmed after GitHub Actions can run.
+- GitHub Actions account lock must be resolved before CI can run on GitHub-hosted runners.
 - No translations are included yet.
 - No country-specific, city-specific, or government-service integrations are included.
 - No full accessibility audit beyond semantic labels, keyboard-focus styling, responsive layout, and browser smoke-check has been completed.
