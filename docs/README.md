@@ -17,4 +17,5 @@ Repository-level maintainer entrypoints:
 
 - `CONTRIBUTING.md` - contributor expectations and project boundaries.
 - `SECURITY.md` - security and privacy reporting policy.
+- `ACCESSIBILITY.md` - accessibility baseline, checklist, and known gaps.
 - `.github/` - issue and pull request templates.

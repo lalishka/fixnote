@@ -18,6 +18,7 @@ Live demo URL: <https://lalishka.github.io/fixnote/>
 - Node smoke tests in `tests/reportBuilder.test.mjs`.
 - Maintainer-readiness check in `scripts/check-maintainer-readiness.mjs`.
 - Contributor, security, issue, and pull request templates for a basic OSS maintenance workflow.
+- Accessibility baseline and checklist in `ACCESSIBILITY.md`.
 - Public OSS maintenance story and limitations in `docs/OSS_MAINTENANCE.md`.
 - GitHub Actions CI workflow in `.github/workflows/ci.yml`.
 - GitHub Pages deployment workflow in `.github/workflows/pages.yml`.
@@ -39,11 +40,13 @@ Live demo URL: <https://lalishka.github.io/fixnote/>
 - First release/tag: `v0.1.0`, based on local tests, maintainer-readiness check, and browser smoke evidence.
 - GitHub Pages legacy branch deployment is enabled from `main` root and built successfully.
 - Live GitHub Pages smoke check passed at `https://lalishka.github.io/fixnote/`: page returns 200, CSS/JS/assets return 200, page title is `FixNote`, snapshot shows the form and generated report, and console has 0 errors and 0 warnings.
+- Accessibility baseline document added with current coverage, manual release checklist, known gaps, and next work.
+- Public roadmap issues #1-#5 are open for accessibility audit, printable output, PWA/offline install review, translation readiness, and issue category review.
 
 ## Not Yet Done
 
 - GitHub Actions account lock must be resolved before CI can run on GitHub-hosted runners.
 - No translations are included yet.
 - No country-specific, city-specific, or government-service integrations are included.
-- No full accessibility audit beyond semantic labels, keyboard-focus styling, responsive layout, and browser smoke-check has been completed.
+- No full WCAG/screen-reader accessibility audit beyond semantic labels, keyboard-focus styling, responsive layout, accessibility checklist, and browser smoke-check has been completed.
 - No external maintainer adoption, npm downloads, or real pull request volume has been established yet.

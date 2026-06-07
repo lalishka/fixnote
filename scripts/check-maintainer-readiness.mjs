@@ -4,6 +4,7 @@ const requiredFiles = [
   "README.md",
   "CONTRIBUTING.md",
   "SECURITY.md",
+  "ACCESSIBILITY.md",
   "LICENSE",
   "docs/README.md",
   "docs/PROJECT_STATE.md",

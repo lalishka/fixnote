@@ -4,8 +4,8 @@ Recommended next steps:
 
 1. Resolve the GitHub account billing/Actions lock so CI can run on GitHub-hosted runners.
 2. Re-enable automatic CI triggers after the GitHub Actions account blocker is resolved.
-3. Add an accessibility review checklist and run it against the current UI.
-4. Consider adding translations only after the English flow is stable; keep wording country-neutral.
-5. Consider a printable output mode for users who need to submit reports in person.
+3. Work through roadmap issue #1: run the accessibility checklist in `ACCESSIBILITY.md` and capture screen reader notes.
+4. Work through roadmap issue #2: define printable output behavior.
+5. Work through roadmap issue #3: decide whether PWA/offline install support is justified.
 
 No blockers are known at this checkpoint.

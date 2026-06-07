@@ -8,6 +8,13 @@
 4. Run `npm test`.
 5. Update `docs/PROJECT_STATE.md` if the feature changes project scope.
 
+## Triage Roadmap Issues
+
+1. Keep public roadmap issues concrete and tied to a verifiable change or decision.
+2. Do not create placeholder issues only to inflate activity.
+3. When an issue changes product behavior, update the relevant docs in the same pull request or commit.
+4. Close issues only after code/docs and checks are complete.
+
 ## Prepare a GitHub Release
 
 1. Run `npm test`.
@@ -17,7 +24,8 @@
 5. Update `docs/PROJECT_STATE.md` with verified and unverified status.
 6. Check that `README.md` still describes the current app.
 7. Check that `CONTRIBUTING.md`, `SECURITY.md`, and `.github/` templates still match the workflow.
-8. Tag the release, push the tag, and create the GitHub release only after the local checks pass.
+8. Run the checklist in `ACCESSIBILITY.md` for UI or report-output changes.
+9. Tag the release, push the tag, and create the GitHub release only after the local checks pass.
 
 ## Maintainer Readiness Check
 

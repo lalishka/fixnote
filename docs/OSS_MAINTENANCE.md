@@ -25,11 +25,20 @@ FixNote now includes a small maintainer baseline:
 
 - contributor guidelines;
 - security and privacy reporting policy;
+- accessibility baseline and review checklist;
 - issue and pull request templates;
 - release and testing runbooks;
 - manual-dispatch GitHub Actions CI and Pages deployment workflows;
 - automated maintainer-readiness check;
 - tests for report-generation behavior and edge cases.
+
+The public roadmap is tracked in GitHub issues:
+
+- #1 Accessibility audit checklist and screen reader smoke pass
+- #2 Printable report output mode
+- #3 PWA/offline install readiness review
+- #4 Translation readiness without country-specific assumptions
+- #5 Review public-space issue categories
 
 ## How Codex/API Credits Would Help
 
@@ -46,5 +55,6 @@ Codex and API credits would be used for practical OSS maintenance work:
 
 - The project is early and does not yet have external adoption.
 - GitHub Actions CI is prepared but blocked until GitHub-hosted Actions can run for the repository account.
+- No full WCAG or screen-reader audit has been completed yet.
 - No full accessibility audit has been completed yet.
 - No country-specific reporting integrations are included.
