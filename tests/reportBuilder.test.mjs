@@ -58,3 +58,20 @@ test("buildReport ignores unknown evidence values", () => {
   assert.match(report, /urgent safety concern/);
   assert.match(report, /Evidence: photo attached\./);
 });
+
+test("buildReport output contains the printable report sections", () => {
+  const report = buildReport({
+    issueType: "crossing",
+    location: "Oak Road school crossing",
+    details: "The crossing signal does not turn on",
+    impact: "safety",
+    urgency: "urgent",
+    evidence: ["time"]
+  });
+
+  assert.match(report, /^Subject:/m);
+  assert.match(report, /^Details:/m);
+  assert.match(report, /^Impact:/m);
+  assert.match(report, /^Requested action:/m);
+  assert.match(report, /^Evidence:/m);
+});

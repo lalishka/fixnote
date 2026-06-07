@@ -14,6 +14,7 @@ It turns messy notes about problems like broken streetlights, potholes, trash, b
 - impact and urgency wording;
 - an evidence checklist;
 - a copy-ready message.
+- print-ready output.
 
 The project is intentionally not country-specific. It has no backend, accounts, tracking, paid APIs, or external runtime dependencies.
 
@@ -58,6 +59,8 @@ FixNote now includes a small OSS-maintenance baseline:
 - GitHub issue and pull request templates;
 - manual-dispatch GitHub Actions CI workflow;
 - live GitHub Pages deployment from `main` root;
+- PWA manifest and service worker for install/offline readiness;
+- print report workflow;
 - `npm run check` for maintainer-readiness checks;
 - docs in `docs/` for state, setup, testing, runbook, decisions, next steps, and glossary.
 - `docs/OSS_MAINTENANCE.md` for the public OSS maintenance story and current limitations.

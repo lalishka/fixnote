@@ -3,6 +3,7 @@ import { buildReport } from "./reportBuilder.js";
 const form = document.querySelector("#report-form");
 const output = document.querySelector("#report-output");
 const copyButton = document.querySelector("#copy-button");
+const printButton = document.querySelector("#print-button");
 const copyStatus = document.querySelector("#copy-status");
 
 function readForm() {
@@ -33,8 +34,27 @@ async function copyReport() {
   }
 }
 
+function printReport() {
+  renderReport();
+  window.print();
+}
+
+function registerServiceWorker() {
+  if (!("serviceWorker" in navigator)) {
+    return;
+  }
+
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js").catch(() => {
+      // The app still works without installable offline support.
+    });
+  });
+}
+
 form.addEventListener("input", renderReport);
 form.addEventListener("change", renderReport);
 copyButton.addEventListener("click", copyReport);
+printButton.addEventListener("click", printReport);
 
 renderReport();
+registerServiceWorker();

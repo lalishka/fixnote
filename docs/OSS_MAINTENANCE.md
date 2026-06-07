@@ -30,7 +30,9 @@ FixNote now includes a small maintainer baseline:
 - release and testing runbooks;
 - manual-dispatch GitHub Actions CI and Pages deployment workflows;
 - automated maintainer-readiness check;
-- tests for report-generation behavior and edge cases.
+- tests for report-generation behavior and edge cases;
+- print report workflow;
+- PWA manifest and static-asset service worker.
 
 The public roadmap is tracked in GitHub issues:
 

@@ -12,6 +12,7 @@ The current app includes:
 - keyboard-focus styling;
 - responsive desktop and mobile layouts;
 - browser smoke checks for visible form controls and generated output;
+- print-focused output that hides editing controls and keeps the report readable;
 - local-only report generation with no required account, tracking, or remote API.
 
 ## Manual Review Checklist
@@ -24,6 +25,7 @@ Before a release that changes UI or report output, check:
 - focus state is visible;
 - generated report updates after keyboard input;
 - generated report remains readable on mobile;
+- print preview keeps the report readable without form controls;
 - text does not overlap or overflow controls;
 - color contrast is readable in normal and focus states;
 - copy status is announced through the existing live region;
@@ -40,5 +42,4 @@ Before a release that changes UI or report output, check:
 
 - Run a screen reader smoke pass.
 - Add a high-contrast review.
-- Add printable output checks.
 - Add automated accessibility checks only after evaluating whether a new dependency is justified.

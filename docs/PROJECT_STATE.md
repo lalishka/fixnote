@@ -14,18 +14,21 @@ Live demo URL: <https://lalishka.github.io/fixnote/>
 - Report generation logic in `src/reportBuilder.js`.
 - Browser interaction in `src/app.js`.
 - Styling in `src/styles.css`.
+- PWA manifest in `manifest.webmanifest`.
+- Offline cache service worker in `service-worker.js`.
 - Static SVG mark in `assets/fixnote-mark.svg`.
 - Node smoke tests in `tests/reportBuilder.test.mjs`.
 - Maintainer-readiness check in `scripts/check-maintainer-readiness.mjs`.
 - Contributor, security, issue, and pull request templates for a basic OSS maintenance workflow.
 - Accessibility baseline and checklist in `ACCESSIBILITY.md`.
+- Print report workflow and print CSS.
 - Public OSS maintenance story and limitations in `docs/OSS_MAINTENANCE.md`.
 - GitHub Actions CI workflow in `.github/workflows/ci.yml`.
 - GitHub Pages deployment workflow in `.github/workflows/pages.yml`.
 
 ## Verified
 
-- `npm test` passes: 5 report-builder tests.
+- `npm test` passes: 6 report-builder tests.
 - Playwright browser smoke-check loaded `http://localhost:4173` with zero console errors after the favicon fix.
 - Desktop viewport `1365x900` was visually checked: form, generated report, labels, and copy button are visible with no obvious overlap.
 - Mobile viewport `390x844` was visually checked at top and scrolled positions: form controls, copy button, and generated report are readable with no obvious overlap.
@@ -41,6 +44,9 @@ Live demo URL: <https://lalishka.github.io/fixnote/>
 - GitHub Pages legacy branch deployment is enabled from `main` root and built successfully.
 - Live GitHub Pages smoke check passed at `https://lalishka.github.io/fixnote/`: page returns 200, CSS/JS/assets return 200, page title is `FixNote`, snapshot shows the form and generated report, and console has 0 errors and 0 warnings.
 - Accessibility baseline document added with current coverage, manual release checklist, known gaps, and next work.
+- Printable report mode implemented with a print button and print stylesheet.
+- PWA/offline install readiness implemented with a web app manifest and service worker cache for static assets.
+- 2026-06-07 local PWA/print smoke: manifest returns 200, service worker registers at localhost scope, Print report calls `window.print`, desktop/mobile snapshots show Copy and Print buttons, and console has 0 errors and 0 warnings.
 - Public roadmap issues #1-#5 are open for accessibility audit, printable output, PWA/offline install review, translation readiness, and issue category review.
 
 ## Not Yet Done

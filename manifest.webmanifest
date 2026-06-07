@@ -1,0 +1,18 @@
+{
+  "name": "FixNote",
+  "short_name": "FixNote",
+  "description": "Offline public-space issue report helper for clearer community service requests.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbfaf6",
+  "theme_color": "#1d7f64",
+  "icons": [
+    {
+      "src": "assets/fixnote-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

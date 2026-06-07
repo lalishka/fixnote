@@ -29,3 +29,9 @@ Reason: the goal is to help residents send clearer reports, not to imitate a law
 FixNote includes a small maintainer-readiness check and repository templates before it has a large contributor community.
 
 Reason: the project is public-good OSS, so contributors and future maintainers need clear safety boundaries early: privacy limits, country-neutral scope, no destructive scripts, and repeatable checks.
+
+## PWA and Print Support
+
+FixNote includes a web app manifest, service worker, and print stylesheet.
+
+Reason: public-space reporting often happens in low-connectivity or offline contexts, and some users need to submit reports in person or attach a printed/PDF copy. The service worker caches only static assets and must not store user report text.

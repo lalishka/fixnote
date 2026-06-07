@@ -178,7 +178,13 @@ button:focus-visible {
   accent-color: var(--accent);
 }
 
-.copy-button {
+.action-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.action-button {
   min-height: 48px;
   border: 0;
   border-radius: 8px;
@@ -186,10 +192,18 @@ button:focus-visible {
   color: white;
   cursor: pointer;
   font-weight: 800;
+.action-button:hover {
+  background: var(--accent-strong);
 }
 
-.copy-button:hover {
-  background: var(--accent-strong);
+.secondary-button {
+  border: 1px solid #b6d6ca;
+  background: #edf8f4;
+  color: var(--accent-strong);
+}
+
+.secondary-button:hover {
+  background: #d9f0e8;
 }
 
 .copy-status {
@@ -256,7 +270,55 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 
+  .action-row {
+    grid-template-columns: 1fr;
+  }
+
   .report-output {
     min-height: 360px;
+  }
+}
+
+@media print {
+  body {
+    min-height: auto;
+    background: white;
+    color: black;
+  }
+
+  .app-shell {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .intro,
+  .form-panel,
+  .privacy-note {
+    display: none;
+  }
+
+  .workspace {
+    display: block;
+  }
+
+  .panel,
+  .output-panel {
+    border: 0;
+    box-shadow: none;
+  }
+
+  .output-header {
+    border-bottom: 1px solid #999;
+    padding: 0 0 12px;
+  }
+
+  .report-output {
+    min-height: auto;
+    padding: 16px 0 0;
+    background: white;
+    color: black;
+    font-size: 12pt;
+    line-height: 1.5;
   }
 }

@@ -15,7 +15,9 @@ const requiredFiles = [
   ".github/ISSUE_TEMPLATE/bug_report.md",
   ".github/ISSUE_TEMPLATE/feature_request.md",
   ".github/workflows/ci.yml",
-  ".github/workflows/pages.yml"
+  ".github/workflows/pages.yml",
+  "manifest.webmanifest",
+  "service-worker.js"
 ];
 
 const requiredPackageScripts = ["test", "check"];

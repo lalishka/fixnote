@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Offline public-space issue report helper for clearer community service requests.">
+    <meta name="theme-color" content="#1d7f64">
     <title>FixNote</title>
     <link rel="icon" href="assets/fixnote-mark.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="src/styles.css">
   </head>
   <body>
@@ -78,7 +80,10 @@
             <label><input type="checkbox" name="evidence" value="nearby"> Nearby landmark</label>
           </fieldset>
 
-          <button type="button" id="copy-button" class="copy-button">Copy report</button>
+          <div class="action-row">
+            <button type="button" id="copy-button" class="action-button">Copy report</button>
+            <button type="button" id="print-button" class="action-button secondary-button">Print report</button>
+          </div>
           <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
         </form>
 
